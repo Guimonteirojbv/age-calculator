@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <form action="" class="insertDataContainer" id="form">
+        <div class="wraper-input">
+          <label for="day" id="labelDay">Day</label>
+          <input
+            type="text"
+            maxlength="2"
+            minlength="2"
+            placeholder="DD"
+            id="day"
+            required
+          />
+          <span class="error-message" id="error-day"></span>
+        </div>
+
+        <div class="wraper-input">
+          <label for="month" id="labelMonth">Month</label>
+          <input
+            type="text"
+            placeholder="MM"
+            id="month"
+            required
+            maxlength="2"
+            minlength="2"
+          />
+          <span class="error-message" id="error-month"></span>
+        </div>
+
+        <div class="wraper-input">
+          <label for="year" id="labelYear">YEAR</label>
+          <input
+            type="text"
+            placeholder="YYYY"
+            id="year"
+            required
+            maxlength="4"
+            minlength="4"
+          />
+          <span class="error-message" id="error-year"></span>
+        </div>
+
+        <button type="submit" class="iconArrow">
+          <img src="./assets/images/icon-arrow.svg" alt="Icon arrow" />
+        </button>
+      </form>
+      <div class="wrapper-content">
+        <div>
+          <p><span id="span-elapsed-years">--</span>years</p>
+        </div>
+
+        <div>
+          <p><span id="span-elapsed-months">--</span>months</p>
+        </div>
+
+        <div>
+          <p><span id="span-elapsed-days">--</span>days</p>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.linkedin.com/in/guilherme-monteiro-b38086194/"
+        target="_blank"
+      >
+        Guilherme Monteiro</a
+      >.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
